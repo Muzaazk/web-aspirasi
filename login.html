@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - SpeakUpId</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body-login">
+    <div class="login-container">
+      <h2>
+        Login ke <span class="speak">Speak</span><span class="up">Up</span
+        ><span class="id">Id</span>
+      </h2>
+      <form class="login-form">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Masukkan username"
+          required
+        />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Masukkan password"
+          required
+        />
+
+        <div id="togglePassword" style="cursor: pointer">
+          <svg
+            id="eyeClosed"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-eye-off"
+            viewBox="0 0 24 24"
+            color="grey"
+          >
+            <path
+              d="M17.94 17.94A10.94 10.94 0 0112 20c-7 0-11-8-11-8a18.93 18.93 0 014.17-5.94"
+            />
+            <path d="M1 1l22 22" />
+            <path d="M9.88 9.88A3 3 0 0114.12 14.12" />
+          </svg>
+
+          <svg
+            id="eyeOpen"
+            style="display: none"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-eye"
+            viewBox="0 0 24 24"
+            color="grey"
+          >
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" />
+            <circle cx="12" cy="12" r="3" />
+          </svg>
+        </div>
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="adminLogin" />
+          <label for="adminLogin">Login sebagai admin</label>
+        </div>
+
+        <button type="button" id="loginBtn">Login</button>
+      </form>
+      <p class="back-link"><a href="index.html">← Kembali ke beranda</a></p>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

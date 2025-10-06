@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpeakUpId - Suara Rakyat Indonesia</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <h2>
+        <span class="speak">Speak</span><span class="up">Up</span
+        ><span class="id">Id</span>
+      </h2>
+
+      <p>U</p>
+      <a href="aspirasiku.html">Aspirasiku</a>
+      <a href="home.html">Beranda</a>
+    </header>
+    <div class="kategori">
+      <button class="semua" onclick="filterAspirasi('all')">Semua</button>
+      <button class="pendidikan" onclick="filterAspirasi('pendidikan')">
+        Pendidikan
+      </button>
+      <button class="kesehatan" onclick="filterAspirasi('kesehatan')">
+        Kesehatan
+      </button>
+      <button class="infrastruktur" onclick="filterAspirasi('infrastruktur')">
+        Infrastruktur
+      </button>
+      <button class="lingkungan" onclick="filterAspirasi('lingkungan')">
+        Lingkungan
+      </button>
+    </div>
+    <script src="home.js"></script>
+  </body>
+</html>
